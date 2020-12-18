@@ -1,3 +1,27 @@
 .section-content {
     padding: 30px 0;
+
+    &_light-gray {
+        background-color: @color-light-gray;
+    }
+
+    &_gray {
+        background-color: @color-gray;
+    }
+
+    &_dark {
+        background-color: @color-dark;
+    }
+
+    &_additional-info {
+        margin-top: -20px;
+
+        @media @screen-gt-s {
+            margin-top: -11px;
+        }
+
+        @media @screen-gt-m {
+            margin-top: 11px;
+        }
+    }
 }

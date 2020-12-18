@@ -2,8 +2,17 @@
     margin-bottom: 30px;
     text-align: center;
 
+    @media @screen-gt-s {
+        margin-bottom: 40px;
+    }
+
+    @media @screen-gt-m {
+        margin-bottom: 50px;
+    }
+
     &__image-container {
-        margin-bottom: 10px;
+        max-width: 290px;
+        margin: 0 auto 10px;
         position: relative;
     }
 
@@ -37,10 +46,15 @@
         font-size: 16px;
         font-family: @font-family-heading;
         font-weight: bold;
-        margin-bottom: 5px;
+        margin: -8px 0 5px 0;
 
         @media @screen-gt-s {
+            margin: -5px 0 5px 0;
             font-size: 18px;
+        }
+
+        @media @screen-gt-m {
+            margin: -8px 0 5px 0;
         }
     }
 
