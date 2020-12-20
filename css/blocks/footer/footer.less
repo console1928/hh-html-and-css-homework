@@ -8,20 +8,26 @@
 
     &__links {
         padding: 0 0 30px 0;
-        border-bottom: 1px solid #666666;
-
-        @media @screen-gt-s {
-            display: flex;
-            flex-direction: initial;
-            justify-content: space-between;
-        }
 
         @media @screen-gt-m {
-            padding: 0 0 32px 0;
+            padding: 0 0 33px 0;
         }
     }
 
-    &__fill {
+    &-info {
+        max-width: 250px;
+        padding: 15px 0 0 0;
+        color: #999999;
+        line-height: 1.8em;
+        border-top: 1px solid #666666;
+
+        @media @screen-gt-s {
+            max-width: initial;
+            padding: 30px 0 0 0;
+        }
+    }
+
+    &__logo-container {
         display: none;
 
         @media @screen-gt-m {
@@ -29,20 +35,11 @@
         }
     }
 
-    &-info {
-        max-width: 250px;
-        margin: 15px 0 0 0;
-        color: #999999;
-        line-height: 1.8em;
-
-        @media @screen-gt-s {
-            max-width: 580px;
-            margin: 30px 0 0 0;
-        }
-
-        @media @screen-gt-m {
-            max-width: initial;
-        }
+    &__logo {
+        float: right;
+        width: 46px;
+        height: 46px;
+        background-image: url('hh.svg');
     }
 }
 
@@ -59,9 +56,10 @@
         display: inline-block;
         width: 36px;
         height: 36px;
+        margin-right: 12px;
 
-        &:not(:last-child) {
-            margin-right: 12px;
+        &_last {
+            margin-right: 0px;
         }
     }
 
@@ -75,7 +73,7 @@
 }
 
 .footer-downloads {
-    margin: 30px 0 0 0;
+    margin: 5px 0 0 0;
 
     @media @screen-gt-s {
         margin: 0;
@@ -86,13 +84,12 @@
     }
 
     &__icon {
-        vertical-align: middle;
-        display: inline-block;
+        float: right;
         width: 140px;
         height: 40px;
 
-        &:not(:last-child) {
-            margin-right: 4px;
+        &_last {
+            margin-right: 8px;
         }
     }
 
@@ -103,22 +100,4 @@
             background-image: url('@{value}.svg');
         }
     })
-}
-
-.footer {
-    &__logo-container {
-        display: none;
-
-        @media @screen-gt-m {
-            display: block;
-        }
-    }
-
-    &__logo {
-        vertical-align: middle;
-        display: inline-block;
-        width: 46px;
-        height: 46px;
-        background-image: url('hh.svg');
-    }
 }
