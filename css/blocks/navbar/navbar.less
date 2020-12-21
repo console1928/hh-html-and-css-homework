@@ -1,0 +1,34 @@
+.navbar {
+    display: none;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media @screen-gt-s {
+        display: flex;
+    }
+
+    &__location,
+    &__item {
+        display: inline-block;
+    }
+
+    &__location {
+        color: #666666;
+    }
+
+    &__item {
+        margin-left: 17px;
+    }
+
+    &__items {
+        float: right;
+        margin: auto;
+        cursor: default;
+    }
+
+    &__link {
+        color: #609FCF;
+        text-decoration: none;
+    }
+}

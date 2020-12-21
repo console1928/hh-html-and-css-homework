@@ -17,6 +17,12 @@
 
     &__button {
         margin-left: 20px;
+
+        &_last {
+            @media @screen-gt-s {
+                display: none;
+            }
+        }
     }
 
     &__menu {
@@ -37,7 +43,7 @@
     text-indent: -9999px;
     cursor: pointer;
 
-    &_login, &_menu {
+    &_login {
         @media @screen-gt-s {
             display: none;
         }
